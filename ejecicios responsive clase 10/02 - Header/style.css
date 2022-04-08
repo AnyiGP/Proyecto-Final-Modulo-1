@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* - Dar al header un color de fondo.
+- , que ocupe todo el ancho, y que tenga un alto fijo (p. ej.: 40px).*/
+.header {
+background-color: bisque;
+width: 100%;
+height: 40px;
+/*falta: Hacer que el header esté arriba de todo de la página, averiguar comando*/
+}
+
+/*Dar a los links los siguientes estilos: tipografía, tamaño de letra y color. Sacar el subrayado que viene por defecto en los links.*/
+nav {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*Hacer que los links queden uno al lado del otro, con un poco de separación y centrados verticalmente con respecto al header.*/
+    /*PONERME DE CABEZA CON FLEX BOX ETC!!!!*/
+}
+
+a {
+    text-decoration: none;
+}

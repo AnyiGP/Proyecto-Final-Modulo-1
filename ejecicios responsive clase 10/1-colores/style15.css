@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*Hacer que el body ocupe todo el alto y el ancho de la pantalla.*/
+  width: 100%;
+  height: 100vh; /* viewport height= medida que indica dar valora todo el alto de la pantalla*/
+  background-color: rgb(194, 199, 199);
+  color: grey;
+  border: 2px solid gray;
+  background-color: bisque; /*Dar al body un color de fondo.*/
+}
+
+h1 {
+  width: 100%; /*ancho*/
+  height: 100vh; /*alto*/
+  font-size: 40px; /*Dar al h1 un tamaño de fuente de 40px.*/
+  font-family: "Montserrat", sans-serif; /*Dar al h1 una tipografía usando Google Fonts (p. ej. Montserrat).*/
+  display: flex;
+  justify-content: center; /*eje principal, main, x, horizontal */
+  align-items: center; /* Centrar el h1 vertical y horizontalmente. */
+}
+
+/* Poner dos breakpoints
+@ media queries*/
+
+/* breackpoint 1: Cuando la pantalla tiene menos de 900px y más de 600px, el h1 debería tener 32px de tamaño de fuente. "screen" es opcional, es para computadoras, tablets, smartphones.*/
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  body {
+    background-color: cornflowerblue; /*En cada breakpoint, cambiar el color de fondo del body.*/
+  }
+  h1 {
+    font-size: 32px;
+  }
+}
+/* breackpoint 2: Cuando la pantalla tiene menos de 600px, el h1 debería tener 24px de tamaño de fuente.*/
+
+@media screen and (max-width: 599px) {
+  body {
+    background-color: crimson; /*En cada breakpoint, cambiar el color de fondo del body.*/
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
